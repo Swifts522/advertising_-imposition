@@ -193,6 +193,7 @@ $default-font-size: 16px;
             .table-elem
             {
                 background-color: #EA423A;
+                transition: 0.2s background-color;
 
                 p
                 {
@@ -204,6 +205,13 @@ $default-font-size: 16px;
                 {
                     background-color: #666666;
                 }
+
+                &:hover
+                {
+                    cursor: pointer;
+                    background-color: #5CB85C;
+                }
+
             }
         }
 
@@ -215,7 +223,7 @@ $default-font-size: 16px;
                 font-family: 'Exo 2', 'Sans-Serif';
                 font-style: normal;
                 font-weight: normal;
-                font-size: 16px;
+                font-size: $default-font-size;
                 width: 40px;
                 height: 40px;
                 border: 1px solid #eaeaea;
@@ -223,6 +231,7 @@ $default-font-size: 16px;
                 justify-content: center;
                 align-items: center;
                 color: #6097ce;
+                transition: 0.2s all;
 
                 &:hover
                 {
@@ -267,7 +276,36 @@ $default-font-size: 16px;
             width: 100%;
             height: 340px;
             background-color: #ffffff;
-            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);         
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);  
+            align-items: center; 
+            
+            h2
+            {
+                font-family: 'Exo 2', 'Sans-Serif';
+                font-style: normal;
+                font-weight: bold;
+                color: black; 
+                font-size: $default-font-size + 2;
+                text-align: center;   
+                margin: 10px 0px; 
+            }
+
+            hr
+            {
+                width: 95%;
+                height: 1px;
+                opacity: 0.2;
+                background-color: #000000;
+                border: 0px solid white;
+            }
+
+            .banner
+            {
+                margin-top: 5px;
+                align-items: center;
+                justify-content: space-between;
+                height: 260px;
+            }
         }
     
         .stats
@@ -275,7 +313,64 @@ $default-font-size: 16px;
             width: 100%;
             height: 190px;
             background-color: #ffffff;
-            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);         
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);  
+            align-items: center;   
+            
+            h2
+            {
+                font-family: 'Exo 2', 'Sans-Serif';
+                font-style: normal;
+                font-weight: bold;
+                color: black; 
+                font-size: $default-font-size + 2;
+                text-align: center;   
+                margin: 10px 0px; 
+            }
+
+            hr
+            {
+                width: 95%;
+                height: 1px;
+                opacity: 0.2;
+                background-color: #000000;
+                border: 0px solid white;
+            }
+
+            .stats-all
+            {
+                width: 95%;
+                height: 120px;
+                justify-content: space-between;
+                align-items: center;
+
+                p
+                {
+                    font-family: 'Exo 2', 'Sans-Serif';
+                    font-style: normal;
+                    font-weight: bold;
+                    color: black; 
+                    font-size: $default-font-size;
+                    text-align: center;      
+                }
+
+                .stat-elem 
+                {
+                    width: 100%;
+                    height: 30px;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .name
+                    {
+                        align-items: center;
+
+                        p
+                        {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

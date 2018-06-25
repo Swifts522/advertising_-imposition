@@ -1,3 +1,43 @@
+@font-face {
+    font-family: 'Exo2';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Exo 2'),
+         url('/static/fonts/Exo2/Bold/Exo2Bold.woff') format('woff'),
+         url('/static/fonts/Exo2/Bold/Exo2Bold.ttf') format('ttf'),
+         url('/static/fonts/Exo2/Bold/Exo2Bold.eot') format('eot');
+  }
+
+@font-face {
+font-family: 'Exo2';
+font-style: normal;
+font-weight: 800;
+src: local('Exo 2 Extra Bold'),
+        url('/static/fonts/Exo2/ExtraBold/Exo2ExtraBold.woff') format('woff'),
+        url('/static/fonts/Exo2/ExtraBold/Exo2ExtraBold.ttf') format('ttf'),
+        url('/static/fonts/Exo2/ExtraBold/Exo2ExtraBold.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro'),
+            url('/static/fonts/Myriad Pro/Regular/MyriadPro-Regular.woff') format('woff'),
+            url('/static/fonts/Myriad Pro/Regular/MyriadPro-Regular.ttf') format('ttf'),
+            url('/static/fonts/Myriad Pro/Regular/MyriadPro-Regular.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Myriad Pro Bold'),
+            url('/static/fonts/Myriad Pro/Bold/MyriadPro-Bold.woff') format('woff'),
+            url('/static/fonts/Myriad Pro/Bold/MyriadPro-Bold.ttf') format('ttf'),
+            url('/static/fonts/Myriad Pro/Bold/MyriadPro-Bold.eot') format('eot');
+}
+
 body
 {
     background-color: #f3f3f3;
