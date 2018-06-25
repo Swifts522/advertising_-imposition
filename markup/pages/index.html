@@ -6,21 +6,11 @@
     </head>
 
     <body class="page">
-        %=symbols=%
+        {{> header/header}}
 
-        <section class="page__wrapper">
+        {{> main/main}}
 
-            <!-- Include your modules here -->
-
-            {{> example/example}}
-
-            <div class="page__buffer"></div>
-
-        </section>
-
-        <footer class="page__footer">
-            {{> footer/footer}}
-        </footer>
+        {{> footer/footer}}
 
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>
