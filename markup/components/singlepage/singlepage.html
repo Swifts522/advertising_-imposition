@@ -1,0 +1,226 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'День');
+      data.addColumn('number', 'Аудитория');
+
+      data.addRows([
+        ['1 июн.',  37.8],
+        ['10 июн.',  30.9],
+        ['20 июн.',  25.4],
+        ['30 июн.',  24.7],
+        ['1 июл.',  25.9],
+        ['10 июл.',   28.8],
+        ['20 июл.',   30.6],
+        ['30 июл.',  32.3],
+        ['1 авг.',  34.9],
+        ['10 авг.', 36.8],
+        ['20 авг.',  38.3],
+        ['30 авг.',  40.6]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Аудитория'
+        },
+        legend: {position: 'none'},
+        width: 900,
+        height: 500
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+</script>
+<main class="main-main row">
+        <section class="main column">
+            <a href = "#" class="siteurl row">
+                <p>www</p>
+                <p>youtube.com...</p>
+            </a>
+            <div class="single-head row">
+                <div class="head row">
+                    <img src="%=static=%/img/general/youtube-icon.png" alt="">
+                    <p class="row">Steven. My chanel about my life and traveles.</p>
+                </div>
+                <div class="rating row">+276</div>
+            </div>
+            <div class="single-content">
+                <div class="html">
+                    <p class="row">
+                        <img class="alignleft size-medium wp-image-226" src="http://localhost/~Mac/wordpress/wp-content/uploads/2018/05/s_second-300x200.png" alt="" width="300" height="200" />
+                        Lorem Ipsum is simply dummy text of the printing and typesetting <br />
+                        industry. Lorem Ipsum has been the industry's standard dummy <br />
+                        text ever since the 1500s, when an unknown printer took a galley <br />
+                        of type and scrambled it to make a type specimen book.Lorem Ipsum <br />
+                        is simply dummy text of the printing and typesetting industry. Lorem <br />
+                        Ipsum has been the industry's standard dummy text ever since the 1<br />
+                        500s, when an unknown printer took a galley of type and scrambled <br />
+                        it to make a type specimen book.</p>
+                        <table style="border-collapse: collapse; width: 100%;" border="1">
+                                <tbody>
+                                <tr>
+                                <td style="width: 33.3333%; text-align: left;">Вид услуги</td>
+                                <td style="width: 50.4732%;">Краткое описание</td>
+                                <td style="width: 16.1934%;">Цена</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 33.3333%;">Обзор сервера</td>
+                                <td style="width: 50.4732%;">Полный обзор сервера. Включая монтаж.</td>
+                                <td style="width: 16.1934%;">1000 руб</td>
+                                </tr>
+                                <tr>
+                                <td style="width: 33.3333%;">Летсплей ( серия )</td>
+                                <td style="width: 50.4732%;">Одна серия летсплея на сервере</td>
+                                <td style="width: 16.1934%;">800 руб</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                </div>
+            </div>
+            
+            <div class="container-linechart" style="width: 95%;">
+                <div id="linechart_material"></div>
+            </div>
+
+            <div class="h2">Контакты</div>
+            <div class="contacts row">
+                <div class="elem row">
+                    <img src="%=static=%/img/general/telephone.png" alt="" width="15px" height="15px"> 
+                    <p>+7 (777) 835 45 88</p>  
+                </div>
+                <div class="elem row">
+                    <img src="%=static=%/img/general/skype-logo.png" alt="" width="19px" height="19px"> 
+                    <p>swifts422</p>  
+                </div>
+                <div class="elem row">
+                    <img src="%=static=%/img/general/vk-logo.png" alt="" width="17px" height="17px"> 
+                    <p>id228740533</p>  
+                </div>
+                <div class="elem row">
+                    <img src="%=static=%/img/general/mail.png" alt="" width="21px" height="16px"> 
+                    <p>swifts422@gail.com</p>  
+                </div>
+            </div>
+
+            <div class="h2">Отзывы</div>
+
+            <div class="reviews">
+                <div class="review column">
+                    <div class="content-wrapper row">
+                        <div class="avatar">
+                            <div class="img"></div>
+                        </div>
+                        <div class="text-wrapper column">
+                            <p class="name">Nicola_Biondi</p>
+                            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                            printer took a galley of type and scrambled it to make</p>
+                        </div>
+                    </div>
+                    <p class="date">Сегодня</p>
+                </div>
+                <div class="review column">
+                        <div class="content-wrapper row">
+                            <div class="avatar">
+                                <div class="img"></div>
+                            </div>
+                            <div class="text-wrapper column">
+                                <p class="name">Nicola_Biondi</p>
+                                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                printer took a galley of type and scrambled it to make</p>
+                            </div>
+                        </div>
+                        <p class="date">Сегодня</p>
+                </div>
+                <div class="review column">
+                        <div class="content-wrapper row">
+                            <div class="avatar">
+                                <div class="img"></div>
+                            </div>
+                            <div class="text-wrapper column">
+                                <p class="name">Nicola_Biondi</p>
+                                <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                                printer took a galley of type and scrambled it to make</p>
+                            </div>
+                        </div>
+                        <p class="date">Сегодня</p>
+                </div>
+                <div class="review column">
+                    <form action="" class="column">
+                        <div class="content-wrapper row">
+                            <div class="avatar">
+                                <div class="img"></div>
+                            </div>
+                            <textarea name="comment" id="comment" cols="auto" rows="auto" placeholder="Введите ваш коментарий..."></textarea>
+                        </div>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+                
+            </div>
+
+        </section>
+    
+        <aside class="side column">
+    
+            <section class="vk-widget row">
+                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
+    
+                <!-- VK Widget -->
+                <div id="vk_groups"></div>
+                <script type="text/javascript">
+                VK.Widgets.Group("vk_groups", {mode: 3, width: "250", height: "255"}, 122944956);
+                </script>
+            </section>
+    
+            <section class="parthers column">
+                <h2>Наши партнеры</h2>
+                <hr>
+                <div class="banner column">
+                    <img src="%=static=%/img/general/parthers.png" alt="" width="235px" height="60px">
+                    <img src="%=static=%/img/general/parthers.png" alt="" width="235px" height="60px">
+                    <img src="%=static=%/img/general/parthers.png" alt="" width="235px" height="60px">
+                    <img src="%=static=%/img/general/parthers.png" alt="" width="235px" height="60px">
+                </div>
+            </section>
+    
+            <section class="stats column">
+                <h2>Статистика</h2>
+                <hr>
+                <div class="stats-all column">
+                    <div class="stat-elem row">
+                        <div class="name row">
+                            <img src="%=static=%/img/general/youtube-icon.png" alt="" width="30px" height="30px">
+                            <p>Всего каналов</p>
+                        </div>
+                        <p>1000</p>
+                    </div>
+                    <div class="stat-elem row">
+                            <div class="name row">
+                                <img src="%=static=%/img/general/vk-icon.png" alt="" width="30px" height="30px">
+                                <p>Всего групп</p>
+                            </div>
+                            <p>1000</p>
+                    </div>
+                    <div class="stat-elem row">
+                            <div class="name row">
+                                <img src="%=static=%/img/general/monitoring-icon.png" alt="" width="30px" height="30px">
+                                <p>Всего площадок</p>
+                            </div>
+                            <p>1000</p>
+                    </div>
+                </div>
+            </section>
+    
+        </aside>
+    </main>
+    

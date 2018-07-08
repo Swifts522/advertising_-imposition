@@ -46,7 +46,7 @@ $default-font-size: 16px;
                         &::before
                         {
                             content: "";
-                            background-image: url(/static/img/general/clock.png);
+                            background-image: url(%=static=%general/clock.png);
                             width: 17px;
                             height: 17px;
                             display: inline-block;
